@@ -10,6 +10,7 @@
 
   --color-secondary: rgb(252, 58, 53);
   --dim-secondary: rgb(109, 5, 26);
+  --lite-secondary: rgb(255, 119, 114);
   --image-gradient: linear-gradient(
     180deg,
     rgba(249, 41, 45, 1) 0%,
@@ -168,16 +169,13 @@ section {
   margin: 10px;
 }
 
-#projects {
-  text-align: center;
-}
-
 .projects-container {
+  text-align: center;
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 8rem;
 }
 
 .project {
@@ -185,7 +183,8 @@ section {
 }
 
 .project-title {
-  font-size: 1.3rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .project-image {
@@ -193,6 +192,17 @@ section {
   border: 4px solid var(--border-color);
   box-shadow: 0 0 3px black;
   border-radius: 3px;
+}
+
+.project-description {
+  font-size: 1.1rem;
+}
+
+.project-skills {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: var(--lite-secondary);
+  /* display: none; */
 }
 
 footer {
